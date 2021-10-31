@@ -4,7 +4,7 @@ WORKDIR /src
 ADD package.json /src/package.json
 RUN npm install -y
 COPY . /src
-RUN apt-get update && apt-get upgrade
+RUN apt-get update && apt-get upgrade -y
 RUN npm run-script build
 RUN apt-get install nginx -y
 RUN service nginx start
