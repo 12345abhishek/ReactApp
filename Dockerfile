@@ -4,8 +4,8 @@ WORKDIR /src
 ADD package.json /src/package.json
 RUN npm install -y
 COPY . /src
-RUN npm run-script build
 RUN apt-get update && apt-get upgrade
+RUN npm run-script build
 RUN apt-get install nginx -y
 RUN service nginx start
 WORKDIR /var/www/html/
