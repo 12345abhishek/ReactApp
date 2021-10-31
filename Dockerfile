@@ -5,8 +5,9 @@ ADD package.json /src/package.json
 RUN npm install -y
 COPY . /src
 RUN apt-get update && apt-get upgrade -y
-RUN export NODE_OPTIONS=--openssl-legacy-provider
-RUN npm run-script build
+# RUN export NODE_OPTIONS=--openssl-legacy-provider
+# RUN npm run-script build
+RUN npm build
 RUN apt-get install nginx -y
 RUN service nginx start
 WORKDIR /var/www/html/
