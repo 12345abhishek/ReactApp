@@ -55,7 +55,7 @@ class Authentication extends Component {
                     value={email}
                     onChange={this.handleChange}
                   />
-                  <Form.Button type="submit"  content='Submit01' />
+                  <Form.Button type="submit"  content='Submit02' />
                 </Form.Group>
               </Form>
               :<Booking name ={name} email= {email} />
