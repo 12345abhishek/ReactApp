@@ -9,7 +9,7 @@ const cards = [
   {
     // avatar: 'logo.jpg',
     // date: 'Joined in 2013',
-    header: 'Tennis Court_aaaaaaaaaaaaaaaaaa',
+    header: 'Tennis Court_',
     // description: 'Primary Contact',
   },
   {
